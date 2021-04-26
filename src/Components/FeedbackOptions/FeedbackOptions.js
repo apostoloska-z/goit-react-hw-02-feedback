@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import styles from "./FeedbackOptions.module.css"
+import "./FeedbackOptions.scss"
 
 const FeedbackOptions = ({ options, clickFn }) => (
-    <div>
+    <div className="options">
         {options.map(option => (
             <button
-                className={styles.button}
+                className="options__button"
                 type="button"
                 key={option}
                 id={option}
